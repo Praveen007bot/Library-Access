@@ -1,0 +1,60 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Event Name -->
+        <EditText
+            android:id="@+id/editTextEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:inputType="text" />
+
+        <!-- Event Date -->
+        <EditText
+            android:id="@+id/editTextEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Date"
+            android:inputType="date" />
+
+        <!-- Organizer Name -->
+        <EditText
+            android:id="@+id/editTextOrganizerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Organizer Name"
+            android:inputType="text" />
+
+        <!-- Organizer Number -->
+        <EditText
+            android:id="@+id/editTextOrganizerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Organizer Number"
+            android:inputType="phone" />
+
+        <!-- Event Poster -->
+        <ImageView
+            android:id="@+id/imageViewEventPoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_poster"
+            android:layout_marginTop="16dp" />
+
+        <!-- Button to Add Event -->
+        <Button
+            android:id="@+id/buttonAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

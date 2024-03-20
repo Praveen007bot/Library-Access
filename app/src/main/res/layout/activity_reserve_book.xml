@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Start Date -->
+    <TextView
+        android:id="@+id/tvStartDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSelectStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_below="@id/tvStartDateLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- End Date -->
+    <TextView
+        android:id="@+id/tvEndDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textSize="18sp"
+        android:layout_below="@id/btnSelectStartDate"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSelectEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_below="@id/tvEndDateLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Time Slot Dropdown -->
+    <TextView
+        android:id="@+id/tvTimeSlotLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Slot"
+        android:textSize="18sp"
+        android:layout_below="@id/btnSelectEndDate"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTimeSlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTimeSlotLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Reserve Button -->
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve"
+        android:layout_below="@id/spinnerTimeSlot"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

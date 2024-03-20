@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_book"
+        android:enabled="true"
+        android:icon="@drawable/ic_book"
+        android:title="books"/>
+    <item
+        android:id="@+id/nav_more"
+        android:enabled="true"
+        android:icon="@drawable/ic_more"
+        android:title="more"/>
+    <item
+        android:id="@+id/nav_favourates"
+        android:enabled="true"
+        android:icon="@drawable/ic_favourates"
+        android:title="favorates"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="profile"/>
+</menu>

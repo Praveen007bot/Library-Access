@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".admin.AdminHomeActivity">
+
+    <!-- First CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <!-- Add your content for the first card here -->
+        <TextView
+            android:id="@+id/tv_AddBooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Books"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorAccent">
+
+        <!-- Add your content for the second card here -->
+        <TextView
+            android:id="@+id/tv_ReservationRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Reservation Request"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Third CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <!-- Add your content for the third card here -->
+        <TextView
+            android:id="@+id/tv_postFine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Post Fine"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fourth CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <!-- Add your content for the fourth card here -->
+        <TextView
+            android:id="@+id/tv_addEvents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Events"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Fifth CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorAccent">
+
+        <!-- Add your content for the fifth card here -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Borrow Request"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

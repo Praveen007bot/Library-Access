@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBookImage"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvAuthorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookName"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvBookDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAuthorName"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookDescription"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCategory"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnAddToFavorites"
+        android:layout_width="150sp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvQuantity"
+        android:layout_marginTop="18dp"
+        android:text="Add to Favorites" />
+
+    <Button
+        android:id="@+id/btnReserveBook"
+        android:layout_width="150sp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnAddToFavorites"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-62dp"
+        android:layout_toEndOf="@+id/btnAddToFavorites"
+        android:text="Reserve Book" />
+
+</RelativeLayout>

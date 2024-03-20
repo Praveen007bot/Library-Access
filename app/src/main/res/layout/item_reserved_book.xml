@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bookIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book ID: " />
+
+    <TextView
+        android:id="@+id/examDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Date: " />
+
+    <TextView
+        android:id="@+id/fineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine: " />
+
+    <TextView
+        android:id="@+id/remainingDaysTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Days: " />
+
+    <Button
+        android:id="@+id/postFineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Fine"
+        android:visibility="gone" />
+
+</LinearLayout>
