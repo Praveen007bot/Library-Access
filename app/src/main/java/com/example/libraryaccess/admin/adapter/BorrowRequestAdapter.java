@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.libraryaccess.R;
 import com.example.libraryaccess.dataclass.BorrowRequest;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -40,11 +41,16 @@ public class BorrowRequestAdapter extends RecyclerView.Adapter<BorrowRequestAdap
         holder.textEndDate.setText("Borrow End Date: " + request.getEndDate());
         // Convert image URL String to Uri
         Uri frontImageUri = Uri.parse(request.getFrontImageUrl());
+
         Uri backImageUri = Uri.parse(request.getBackImageUrl());
 
         // Set the image URIs
-        holder.imageViewFront.setImageURI(frontImageUri);
-        holder.imageViewBack.setImageURI(backImageUri);
+//           holder.imageViewFront.setImageURI(frontImageUri);
+//           holder.imageViewBack.setImageURI(backImageUri);
+
+        Picasso.get().load(frontImageUri).into(holder.imageViewFront);
+        Picasso.get().load(backImageUri).into(holder.imageViewBack);
+
         // Set up onClickListeners for approve and reject buttons
         holder.buttonApprove.setOnClickListener(new View.OnClickListener() {
             @Override
