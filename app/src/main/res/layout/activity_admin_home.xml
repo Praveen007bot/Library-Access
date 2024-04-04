@@ -99,6 +99,7 @@
 
         <!-- Add your content for the fifth card here -->
         <TextView
+            android:id="@+id/tv_borrowBooks"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Borrow Request"

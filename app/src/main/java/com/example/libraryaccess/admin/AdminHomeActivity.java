@@ -55,6 +55,15 @@ public class AdminHomeActivity extends AppCompatActivity {
             }
         });
 
+        binding.tvBorrowBooks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminHomeActivity.this, BorrowRequestAdminActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

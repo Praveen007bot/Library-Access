@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Book Name EditText -->
+    <EditText
+        android:id="@+id/editTextBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"/>
+
+    <!-- Friend's ID or Email EditText -->
+    <EditText
+        android:id="@+id/editTextFriendId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Friend's ID or Email"
+        android:layout_below="@id/editTextBookName"
+        android:layout_margin="16dp"/>
+
+    <!-- Borrow Start Date EditText -->
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Borrow Start Date"
+        android:layout_below="@id/editTextFriendId"
+        android:layout_margin="16dp"/>
+
+    <!-- Borrow End Date EditText -->
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Borrow End Date"
+        android:layout_below="@id/editTextStartDate"
+        android:layout_margin="16dp"/>
+
+    <!-- Capture Front Image Button -->
+    <Button
+        android:id="@+id/buttonCaptureFrontImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Capture Front Image"
+        android:layout_below="@id/editTextEndDate"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Capture Back Image Button -->
+    <Button
+        android:id="@+id/buttonCaptureBackImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Capture Back Image"
+        android:layout_below="@id/editTextEndDate"
+        android:layout_toEndOf="@id/buttonCaptureFrontImage"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Front Image View -->
+    <ImageView
+        android:id="@+id/imageViewFront"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonCaptureFrontImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <!-- Back Image View -->
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonCaptureBackImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/imageViewFront"
+       />
+
+    <!-- Send Request Button -->
+    <Button
+        android:id="@+id/buttonSendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewFront"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="119dp"
+        android:text="Send Request" />
+
+</RelativeLayout>

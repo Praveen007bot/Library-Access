@@ -43,8 +43,6 @@ public class AdminLoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 login();
-                Intent intent = new Intent(AdminLoginActivity.this, AdminHomeActivity.class);
-                startActivity(intent);
             }
         });
 
@@ -60,6 +58,8 @@ public class AdminLoginActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         // Sign in success
                         FirebaseUser user = mAuth.getCurrentUser();
+                        Intent intent = new Intent(AdminLoginActivity.this, AdminHomeActivity.class);
+                        startActivity(intent);
                         // You can add additional actions upon successful login
                         Toast.makeText(AdminLoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                     } else {

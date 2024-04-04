@@ -45,12 +45,8 @@ public class ReservedBook {
 
             // Update fine and remaining days for the specific reserved book
             Map<String, Object> updates = new HashMap<>();
-            
             updates.put("fine", fine);
             updates.put("remainingDays", remainingDays);
-
-
-
             reservedBookRef.updateChildren(updates);
 
         }
@@ -60,16 +56,16 @@ public class ReservedBook {
 
     private void calculateFine() {
         int fineAmount = 0;
-        if (endDate != null && startDate != null) {
+        if (startDate != null && endDate != null) {
             SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
             try {
                 Date end = format.parse(endDate);
                 Date start = format.parse(startDate);
                 long difference = end.getTime() - start.getTime();
                 int remainingDays = (int) TimeUnit.DAYS.convert(difference, TimeUnit.MILLISECONDS);
-                int overdueDays = remainingDays - 2; // Assuming 2 days are allowed for free
-                if (overdueDays > 0) {
-                    fineAmount = overdueDays * 10; // Rs. 10 fine for each overdue day
+//                int overdueDays = remainingDays - 2; // Assuming 2 days are allowed for free
+                if (remainingDays > 0) {
+                    fineAmount = remainingDays * 10; // Rs. 10 fine for each overdue day
                 }
             } catch (ParseException e) {
                 e.printStackTrace();

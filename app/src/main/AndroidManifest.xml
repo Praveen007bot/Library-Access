@@ -14,6 +14,15 @@
         android:theme="@style/Theme.LibraryAccess"
         tools:targetApi="31">
         <activity
+            android:name=".admin.BorrowRequestAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.BorrowRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.EventsActivity"
+            android:exported="false" />
+        <activity
             android:name=".admin.AddEventsActivity"
             android:exported="false" />
         <activity

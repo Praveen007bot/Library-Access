@@ -53,7 +53,6 @@ public class ReservedBookAdapter extends RecyclerView.Adapter<ReservedBookAdapte
 
         public void bind(final ReservedBook reservedBook) {
             bookIdTextView.setText(reservedBook.getBookId());
-
             fineTextView.setText(String.valueOf(reservedBook.getFine()));
             remainingDaysTextView.setText(String.valueOf(reservedBook.getRemainingDays()));
         }
